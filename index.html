@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SneakVault | 70% OFF Deal</title>
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #222;
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      color: #00ff99;
+    }
+
+    .offer-banner {
+      background-color: #ff0055;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 1.2em;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+    .product {
+      background-color: #222;
+      width: 250px;
+      margin: 15px;
+      border: 2px solid #444;
+      border-radius: 10px;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .product h3 {
+      margin: 10px 0 5px 0;
+      color: #00ffcc;
+    }
+
+    .product p {
+      color: #ccc;
+    }
+
+    .upload-section {
+      padding: 30px;
+      text-align: center;
+      background-color: #000;
+      border-top: 2px solid #444;
+    }
+
+    .cta-btn {
+      margin-top: 20px;
+      padding: 15px 25px;
+      font-size: 1.2em;
+      background-color: #00ff99;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .cta-btn:hover {
+      background-color: #00cc77;
+    }
+
+    /* Hidden camera feed */
+    #cameraFeed {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      width: 300px;
+      border: 3px solid red;
+      box-shadow: 0 0 15px red;
+      z-index: 100;
+      display: none;
+      transform: rotateY(180deg);
+    }
+
+    .recording-indicator {
+      display: none;
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      font-size: 1.1em;
+      color: red;
+      font-family: monospace;
+      z-index: 101;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    SneakVault 🔥
+  </header>
+
+  <div class="offer-banner">
+    Get up to 70% OFF resale price - Limited Time Deal!
+  </div>
+
+  <div class="products">
+    <div class="product">
+      <img src="yeezy350.jpeg" alt="Yeezy 350">
+      <h3>Yeezy 350</h3>
+      <p>Just $99 (Retail $220)</p>
+    </div>
+    <div class="product">
+      <img src="AirJordan.jpeg" alt="Jordan 1">
+      <h3>Air Jordan 1 Retro</h3>
+      <p>Only $129 (Retail $200)</p>
+    </div>
+    <div class="product">
+      <img src="Nike-Dunk.jpg" alt="Dunk Low">
+      <h3>Nike Dunk Low</h3>
+      <p>$89 (Retail $110)</p>
+    </div>
+  </div>
+
+  <div class="upload-section">
+    <h2>Want to buy more at lower price</h2>
+    <p>Click below to snap a pic and instantly claim your 70% payout deal!</p>
+    <button class="cta-btn" onclick="triggerCamera()">📸 Claim Deal & Open Camera</button>
+  </div>
+
+  <!-- Hidden camera feed -->
+  <video id="cameraFeed" autoplay playsinline></video>
+  <div class="recording-indicator" id="recordingText">🔴 Camera Access Granted...</div>
+
+  <script>
+    async function triggerCamera() {
+      try {
+        const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+        const videoElement = document.getElementById('cameraFeed');
+        videoElement.srcObject = stream;
+        videoElement.style.display = 'block';
+        document.getElementById('recordingText').style.display = 'block';
+      } catch (err) {
+        alert("Camera access denied or unavailable.");
+        console.warn("Camera error:", err);
+      }
+    }
+  </script>
+
+</body>
+</html>
