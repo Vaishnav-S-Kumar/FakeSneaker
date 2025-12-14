@@ -8,7 +8,6 @@ It simulates how a **normal-looking phishing website combined with basic social 
 
 The website is designed as a **fake sneaker discount platform** that appears harmless and visually appealing, similar to many real-world scam websites.
 
----
 
 ## 🎯 Purpose of the Project
 
@@ -24,7 +23,7 @@ This project is commonly used in:
 - Ethical hacking demonstrations  
 - Social engineering workshops  
 
----
+
 
 ## 🧠 How the Social Engineering Works
 
@@ -38,7 +37,7 @@ This project is commonly used in:
 ⚠️ **Important Note:**  
 The camera is **NOT accessed secretly**. The preview window clearly shows that the camera is active, reinforcing transparency for educational purposes.
 
----
+
 
 ## 🔐 Data & Privacy Disclaimer
 
@@ -46,11 +45,9 @@ The camera is **NOT accessed secretly**. The preview window clearly shows that t
 - ❌ **No data is sent to a server**
 - ❌ **No database or backend is used**
 
-This project only demonstrates **what *could* happen in real-world phishing scenarios**.
-
-> In real attacks, such camera access could lead to:
-> - Image storage in attacker-controlled databases  
-> - Facial recognition abuse  
-> - Identity theft  
-> - Deepfake generation  
-> - Further permission abuse (microphone, location, files, etc.)
+This project only demonstrates **what *could* happen in real-world phishing scenarios**. In real attacks, such camera access could lead to:
+- Image storage in attacker-controlled databases  
+- Facial recognition abuse  
+- Identity theft  
+- Deepfake generation  
+- Further permission abuse (microphone, location, files, etc.)
