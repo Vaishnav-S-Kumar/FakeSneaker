@@ -1,6 +1,6 @@
 # Fake Sneaker Website – Phishing Awareness Demo 
 
-## 📌 Project Overview
+## Project Overview
 
 This project is a **phishing awareness demonstration** created for **educational and cybersecurity training purposes**.
 
@@ -9,7 +9,7 @@ It simulates how a **normal-looking phishing website combined with basic social 
 The website is designed as a **fake sneaker discount platform** that appears harmless and visually appealing, similar to many real-world scam websites.
 
 
-## 🎯 Purpose of the Project
+## Purpose of the Project
 
 The main objective of this project is to **educate audiences** (students, employees, and the general public) on:
 
@@ -25,7 +25,7 @@ This project is commonly used in:
 
 
 
-## 🧠 How the Social Engineering Works
+## How the Social Engineering Works
 
 1. The website offers a **discount** to users.
 2. Users are prompted to **take a picture of their sneaker** to claim the discount.
@@ -34,12 +34,12 @@ This project is commonly used in:
    - The **selfie camera is activated**
    - A **small live preview window** appears on the screen  
 
-⚠️ **Important Note:**  
+**Important Note:**  
 The camera is **NOT accessed secretly**. The preview window clearly shows that the camera is active, reinforcing transparency for educational purposes.
 
 
 
-## 🔐 Data & Privacy Disclaimer
+## Data & Privacy Disclaimer
 
 - ❌ **No images or videos are stored**
 - ❌ **No data is sent to a server**
